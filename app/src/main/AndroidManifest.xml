@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="itay.finci.org.biblegame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainScreen"
+            android:label="@string/title_activity_main_screen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Credit"
+            android:label="@string/title_activity_credit"
+            android:parentActivityName=".MainScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itay.finci.org.biblegame.MainScreen" />
+        </activity>
+        <activity
+            android:name=".Game"
+            android:label="@string/title_activity_game"
+            android:parentActivityName=".MainScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itay.finci.org.biblegame.MainScreen" />
+        </activity>
+        <activity
+            android:name=".QuestionList"
+            android:label="@string/title_activity_question_list"
+            android:parentActivityName=".MainScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itay.finci.org.biblegame.MainScreen" />
+        </activity>
+        <activity
+            android:name=".Results"
+            android:label="@string/title_activity_results"
+            android:parentActivityName=".MainScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itay.finci.org.biblegame.MainScreen" />
+        </activity>
+        <activity
+            android:name=".GamePart2"
+            android:label="@string/title_activity_game_part2"
+            android:parentActivityName=".Game"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itay.finci.org.biblegame.Game" />
+        </activity>
+        <activity
+            android:name=".GamePart3"
+            android:label="@string/title_activity_game_part3"
+            android:parentActivityName=".MainScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itay.finci.org.biblegame.MainScreen" />
+        </activity>
+    </application>
+
+</manifest>
