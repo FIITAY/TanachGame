@@ -27,7 +27,7 @@ public class GamePart2 extends AppCompatActivity {
          secondTry =b.getInt("IN_SECOND_TRY");
          dontSeccede = b.getInt("DIDNT_SECCEDE");
 
-        tft= new truefalse[2];
+        tft= new truefalse[truefalseTable.getInstance(getApplicationContext()).numOfElements()];
         for (int i = 0; i < tft.length; i++) {
             tft[i] = new truefalse(truefalseTable.getInstance(getApplicationContext()).getTrueFalse(i));
         }

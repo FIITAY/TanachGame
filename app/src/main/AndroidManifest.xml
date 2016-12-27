@@ -5,12 +5,12 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="משחק בתנך"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainScreen"
-            android:label="@string/title_activity_main_screen"
+            android:label="משחק בתנך"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -12,10 +12,14 @@ public class PeriodicTable {
 
     public static PeriodicTable getInstance(Context ctx) {
         if (firstTime) {
-            ourInstance.periodic  = new Periodic[2];
-            ourInstance.periodic[0] = new Periodic("the answer is 1","1","2","3","4");
-            ourInstance.periodic[1] = new Periodic("the answer is 1","1","2","3","5");
-            //TODO make the questions
+            ourInstance.periodic  = new Periodic[6];
+            ourInstance.periodic[0] = new Periodic("היכן היתה המלחמה האחרונה של שאול ויהונתן בפלשתים?","הר הגלבוע","עמק האלה","יריחו","גבעת החכילה");
+            ourInstance.periodic[1] = new Periodic("כיצד מת שאול?","נפל על חרבו ומת","במלחמה בפלשתים צלפים ירו בו חץ","נושא כליו הרג אותו בחרבו","אף תשובה נכונה");
+            ourInstance.periodic[2] = new Periodic("מה עשה נושא כליו של שאול במלחמה בפלשתים?","נפל על חרבו ומת" , "דקר את שאול בחרב כפי שביקש ממנו שאול","קרע את בגדיו כשראה ששאול מת" , "וַיָנָס בְּרַ גְּלָיו");
+            ourInstance.periodic[3] = new Periodic("מה עשו הפלשתים לגופתו של שאול ובניו?","כל התשובות נכונות","כרתו את ראשם","הפשיטו אותם","תקעו אותם בחומה");
+            ourInstance.periodic[4] = new Periodic("מי קבר את שאול ואת בניו","יושבי יבש גלעד","הפלשתים שהתעללו בגופות","אף אחד","דוד המלך ואנשיו");
+            ourInstance.periodic[5] = new Periodic("מי אמר למי: \"וּדְקָרֻנִי וְהִתְעַלְּלוּ-בִי\"","שאול לנושא כליו","נושא כליו של שאול לשאול","דוד ליונתן","שאול לנער העמלקי");
+
             firstTime = false;
         }
             return ourInstance;

@@ -43,7 +43,7 @@ public class Game extends AppCompatActivity {
         btOption3 =(Button) findViewById(R.id.btOption3);
         btOption4 =(Button) findViewById(R.id.btOption4);
         roundNum =0;
-        periodic = new Periodic[2];
+        periodic = new Periodic[PeriodicTable.getInstance(getApplicationContext()).getNumElements()];
         for (int i = 0; i < periodic.length; i++) {
             periodic[i] = new Periodic(PeriodicTable.getInstance(getApplicationContext()).getPeriodic(i));
         }
